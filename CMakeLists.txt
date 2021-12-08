@@ -198,9 +198,9 @@ if (NGRAPH_UNIT_TEST_ENABLE)
     endif()
 endif()
 
-if (NGRAPH_TEST_UTIL_ENABLE AND NGRAPH_IS_EMBEDDED)
-    message(FATAL_ERROR "Test util is unsupported in embedded ngraph!")
-endif()
+# if (NGRAPH_TEST_UTIL_ENABLE AND NGRAPH_IS_EMBEDDED)
+#     message(FATAL_ERROR "Test util is unsupported in embedded ngraph!")
+# endif()
 
 macro (NORMALIZE_BOOL VAL)
     if (${VAL})
